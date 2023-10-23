@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SwitchSentence {
     public static void main(String[] args) {
-        int a = -1;
+        int a;
         Scanner reader = new Scanner(System.in);
         do {
             System.out.println("从键盘输入一个0-6的数");
@@ -32,6 +32,6 @@ public class SwitchSentence {
                 default:
                     System.out.println("输入错误");
             }
-        } while (!(a < 0 & a > 6));
+        } while (a < 0||a > 6);
     }
 }
