@@ -1,3 +1,5 @@
+//113,沈凌杰
+
 import java.io.IOException;
 
 public class WhileRead
@@ -6,11 +8,11 @@ public class WhileRead
     {
         int count=0,b;
         System.out.print("请输入数据：");
-//        while(【代码】) //调用 read()方法，读一个字符存入 b 中，按 Enter 键结束
-//        {
-//            System.out.print((char)b); //输出字符 b
-//            count++;
-//        }
-//        System.out.print("\n 您输入了"+count+"个字符");
+        while((char)(b = System.in.read())!='\n') //调用 read()方法，读一个字符存入 b 中，按 Enter 键结束
+        {
+            System.out.print((char)b); //输出字符 b
+            count++;
+        }
+        System.out.print("\n 您输入了"+count+"个字符");
     }
 } 
