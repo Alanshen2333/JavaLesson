@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class ForAndWhile2
-{
+public class ForAndWhile2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         boolean flag = true;
-        for(int i=2;i<0.5*a;i++){
-            if (a == 1) flag = false;
-            if (a % i == 0) {
+        for (int i = 2; i < 0.5 * a; i++) {
+            if (a == 1) {
+                flag = false;
+            } else if (a % i == 0) {
                 flag = false;
                 break;
             }
