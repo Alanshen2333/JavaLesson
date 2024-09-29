@@ -12,7 +12,7 @@ public class ArrayClass<T> {
         String[] beauty={"XiShi","WangZhaojvn","DiaoChan","YangGuifei"};
         a.setT(beauty);
         for (int i = 0; i < beauty.length; i++) {
-            System.out.println(a.getT());
+            System.out.println(a.getT()[i].toString());
         }
     }
 }
